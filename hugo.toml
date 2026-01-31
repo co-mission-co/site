@@ -1,0 +1,48 @@
+baseURL = "https://co-mission.co/"
+languageCode = "en-us"
+title = "Co-Mission"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  defaultTheme = "light"
+  disableThemeToggle = true
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = false
+  disableSpecial1stPost = true
+
+[[menu.main]]
+  name = "Home"
+  url = "#top"
+  weight = 10
+
+[[menu.main]]
+  name = "How We Co-Mission"
+  url = "#how-we-co-mission"
+  weight = 20
+
+[[menu.main]]
+  name = "Our Co-Missions"
+  url = "#our-co-missions"
+  weight = 30
+
+[[menu.main]]
+  name = "Our Story"
+  url = "#our-story"
+  weight = 40
+
+[[menu.main]]
+  name = "Contact"
+  url = "#connect"
+  weight = 50
