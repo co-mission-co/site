@@ -12,7 +12,7 @@
     <p>That night was different.</p>
     <p>
       It felt as if <i>the inspiration</i> had been waiting—quietly—until I was ready to receive it.
-      The clarity was immediate. Calm. Almost magical.
+      The clarity was immediate. Undeniable. Almost magical.
     </p>
     <p>
       For months, probably years, I had been asking the same question:
