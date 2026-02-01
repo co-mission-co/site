@@ -1,13 +1,13 @@
 # Co-Mission Hugo Site
 
-This is a Hugo static site using the PaperMod theme and a single-page layout with
+This is a Hugo static site using the LoveIt theme and a single-page layout with
 section anchors for navigation.
 
 ## Local tooling
 
 You need:
 - Git
-- Hugo Extended (required for PaperMod assets)
+- Hugo Extended (required for theme assets)
 
 Install Hugo Extended:
 - Windows (scoop): `scoop install hugo-extended`
@@ -30,12 +30,12 @@ Open: http://localhost:1313
 
 ## Theme
 
-Theme: PaperMod (git submodule at `themes/PaperMod`).
+Theme: LoveIt (git submodule at `themes/LoveIt`).
 
 ## Customize sections
 
 Edit the homepage sections in `content/_index.md` and styles in
-`assets/css/extended/custom.css`.
+`static/css/custom.css`.
 
 ## GitHub Pages
 

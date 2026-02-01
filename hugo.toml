@@ -1,7 +1,7 @@
 baseURL = "https://co-mission.co/"
 languageCode = "en-us"
-title = "Co-Mission"
-theme = "PaperMod"
+title = "Co-Mission.co"
+theme = "LoveIt"
 enableRobotsTXT = true
 
 [pagination]
@@ -15,12 +15,18 @@ enableRobotsTXT = true
 [params]
   defaultTheme = "light"
   disableThemeToggle = true
-  ShowReadingTime = false
-  ShowShareButtons = false
-  ShowPostNavLinks = false
-  ShowBreadCrumbs = false
-  ShowCodeCopyButtons = false
-  disableSpecial1stPost = true
+  description = "Co-Mission: True Missions Happen in Connection"
+
+  [params.header]
+    [params.header.title]
+      name = "Co-Mission"
+
+[params.page]
+  [params.page.library]
+    [params.page.library.css]
+      custom = "css/custom.css"
+    [params.page.library.js]
+      slogan = "js/slogan.js"
 
 [[menu.main]]
   name = "Home"
@@ -28,18 +34,18 @@ enableRobotsTXT = true
   weight = 10
 
 [[menu.main]]
+  name = "Our Story"
+  url = "#our-story"
+  weight = 20
+
+[[menu.main]]
   name = "How We Co-Mission"
   url = "#how-we-co-mission"
-  weight = 20
+  weight = 30
 
 [[menu.main]]
   name = "Our Co-Missions"
   url = "#our-co-missions"
-  weight = 30
-
-[[menu.main]]
-  name = "Our Story"
-  url = "#our-story"
   weight = 40
 
 [[menu.main]]
