@@ -1,0 +1,12 @@
+<!-- Custom CSS -->
+{{ $customCSS := resources.Get "css/custom.css" }}
+{{ if $customCSS }}
+  {{ $customCSS = $customCSS | resources.Minify | resources.Fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $customCSS.RelPermalink }}" integrity="{{ $customCSS.Data.Integrity }}">
+{{ end }}
+
+<!-- Typing Animation Script -->
+<script src="{{ "js/typing-animation.js" | relURL }}" defer></script>
+
+<!-- Mobile Menu Fix Script -->
+<script src="{{ "js/menu-fix.js" | relURL }}" defer></script>

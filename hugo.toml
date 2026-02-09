@@ -1,54 +1,111 @@
+# Co-Mission Hugo Site Configuration
+# Theme: Blowfish - https://blowfish.page/docs/
+
 baseURL = "https://co-mission.co/"
-languageCode = "en-us"
-title = "Co-Mission.co"
-theme = "LoveIt"
+title = "Co-Mission"
+theme = "blowfish"
+defaultContentLanguage = "en"
+
+# Enable emoji support
+enableEmoji = true
+
+# Enable robots.txt generation
 enableRobotsTXT = true
 
-[pagination]
-  pagerSize = 10
+# Copyright notice (appears in footer)
+copyright = "© 2024 Co-Mission"
 
+[languages]
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    weight = 1
+
+[params]
+  # Appearance settings
+  # Use "light" or "dark" (no toggle - fixed appearance)
+  defaultAppearance = "light"
+  
+  # Disable auto-switching based on system preference
+  autoSwitchAppearance = false
+  
+  # Color scheme (custom Co-Mission scheme with sunset orange)
+  colorScheme = "comission"
+  
+  # Disable search functionality
+  enableSearch = false
+  
+  # Header configuration
+  [params.header]
+    # "fixed" layout creates sticky header with hamburger menu on mobile
+    layout = "fixed"
+    
+    # Show site logo/title
+    showTitle = true
+  
+  # Homepage layout
+  [params.homepage]
+    # Using "page" layout for vanilla setup (can be changed later)
+    layout = "page"
+    
+    # Show recent articles on homepage
+    showRecent = false
+  
+  # Footer configuration
+  [params.footer]
+    showCopyright = true
+    showThemeAttribution = true
+    # Hide the appearance switcher toggle in footer
+    showAppearanceSwitcher = false
+  
+  # Article/page configuration
+  [params.article]
+    showDate = true
+    showDateUpdated = false
+    showAuthor = false
+    showBreadcrumbs = false
+    showDraftLabel = true
+    showEdit = false
+    showHeadingAnchors = true
+    showPagination = true
+    showReadingTime = true
+    showWordCount = false
+    showComments = false
+
+# Menu configuration
+# Define navigation menu items
+[[menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "Our Story"
+  url = "/#our-story"
+  weight = 20
+
+[[menus.main]]
+  name = "How We Co-Mission"
+  url = "/#how-we-co-mission"
+  weight = 30
+
+[[menus.main]]
+  name = "Our Co-Missions"
+  url = "/#our-co-missions"
+  weight = 40
+
+[[menus.main]]
+  name = "Connect"
+  url = "/#connect"
+  weight = 50
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS"]
+
+# Markup configuration
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
+      # Allow raw HTML in markdown
       unsafe = true
-
-[params]
-  defaultTheme = "light"
-  disableThemeToggle = true
-  description = "Co-Mission: True Missions Happen in Connection"
-
-  [params.header]
-    [params.header.title]
-      name = "Co-Mission"
-
-[params.page]
-  [params.page.library]
-    [params.page.library.css]
-      custom = "css/custom.css"
-    [params.page.library.js]
-      slogan = "js/slogan.js"
-
-[[menu.main]]
-  name = "Home"
-  url = "#top"
-  weight = 10
-
-[[menu.main]]
-  name = "Our Story"
-  url = "#our-story"
-  weight = 20
-
-[[menu.main]]
-  name = "How We Co-Mission"
-  url = "#how-we-co-mission"
-  weight = 30
-
-[[menu.main]]
-  name = "Our Co-Missions"
-  url = "#our-co-missions"
-  weight = 40
-
-[[menu.main]]
-  name = "Contact"
-  url = "#connect"
-  weight = 50
